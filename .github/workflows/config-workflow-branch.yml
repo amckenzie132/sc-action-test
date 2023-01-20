@@ -1,0 +1,17 @@
+name: Config Workflow
+
+on:
+  workflow_dispatch: null
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Start Tunnel
+    steps:
+      - uses: saucelabs/sauce-connect-action@alana-sc-4066-log-output
+        with:
+          username: "${{ secrets.SAUCE_USERNAME }}"
+          accessKey: "${{ secrets.SAUCE_ACCESS_KEY }}"
+          region: us-west
+          tunnelName: sc-action-test-config
+          configFile: ${{ github.workspace }}/sc-configuration/config-workflow.yaml
