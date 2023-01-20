@@ -21,6 +21,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: List github workspace
-        run: | 
+        run: |
           echo ${{ github.workspace }}
           ls -al ${{ github.workspace }}
+          cat ${{ github.workspaace }}/sc-configuration/config-workflow.yaml

@@ -1,4 +1,4 @@
-name: Config Workflow
+name: Config Fail Workflow
 
 on:
   workflow_dispatch: null
@@ -14,4 +14,4 @@ jobs:
           accessKey: "${{ secrets.SAUCE_ACCESS_KEY }}"
           region: us-west
           tunnelName: sc-action-test-config-fail
-          configFile: ${{ github.workspace }}/sc-configuration/config-fail.yaml
+          configFile: ${{ github.workspace }}/sc-configuration/config-fail-workflow.yaml

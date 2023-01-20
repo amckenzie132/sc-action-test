@@ -1,4 +1,4 @@
-name: Config Workflow
+name: Config v2alpha Workflow
 
 on:
   workflow_dispatch: null
@@ -14,4 +14,4 @@ jobs:
           accessKey: "${{ secrets.SAUCE_ACCESS_KEY }}"
           region: us-west
           tunnelName: sc-action-test-config-v2alpha
-          configFile: ${{ github.workspace }}/sc-configuration/config-v2alpha.yaml
+          configFile: ${{ github.workspace }}/sc-configuration/config-v2alpha-workflow.yaml
