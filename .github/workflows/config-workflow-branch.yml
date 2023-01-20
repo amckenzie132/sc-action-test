@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Start Tunnel
     steps:
+      - uses: actions/checkout@v3
       - uses: saucelabs/sauce-connect-action@alana-sc-4066-log-output
         with:
           username: "${{ secrets.SAUCE_USERNAME }}"
