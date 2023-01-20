@@ -24,4 +24,4 @@ jobs:
         run: |
           echo ${{ github.workspace }}
           ls -al ${{ github.workspace }}
-          cat ${{ github.workspaace }}/sc-configuration/config-workflow.yaml
+          cat ${{ github.workspace }}/sc-configuration/config-workflow.yaml
