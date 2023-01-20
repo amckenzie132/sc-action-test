@@ -14,4 +14,4 @@ jobs:
           accessKey: "${{ secrets.SAUCE_ACCESS_KEY }}"
           region: us-west
           tunnelName: sc-action-test-config-v2alpha
-          configFile: ${{ github.workspace }}/sc-configuration/config-v2alpha-workflow.yaml
+          configFile: ${{ github.workspace }}/sc-configuration/config-v2alpha.yaml
