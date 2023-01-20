@@ -1,4 +1,4 @@
-name: Config Workflow
+name: Config Workflow Branch
 
 on:
   workflow_dispatch: null
