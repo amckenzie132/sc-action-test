@@ -15,4 +15,4 @@ jobs:
           accessKey: "${{ secrets.SAUCE_ACCESS_KEY }}"
           region: us-west
           tunnelName: sc-action-test-config
-          configFile: ${{ github.workspace }}/sc-configuration/config.yaml
+          configFile: ${{ github.workspace }}/sc-configuration/config-invalid.yaml
