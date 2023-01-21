@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Start Tunnel
     steps:
-      - uses: actions/checkout@v3
-      - uses: saucelabs/sauce-connect-action@v2
+      - uses: actions/checkout@v3 # reference files in the current repository
+      - uses: saucelabs/sauce-connect-action@main # or use the latest version with @main
         with:
           username: "${{ secrets.SAUCE_USERNAME }}"
           accessKey: "${{ secrets.SAUCE_ACCESS_KEY }}"
